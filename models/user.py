@@ -3,13 +3,20 @@ from utils.file_helpers import load_json, save_json
 
 DATA_FILE_PATH = Path("data/users.json")
 
+
 class User:
     def __init__(self, name, email):
         self.name = name
         self.email = email
+        # holds Project objects
+        self.projects = []
+
+    def add_project(self, project):
+        self.projects.append(project)
 
     def __str__(self):
-        return f"name: {self.name} | email: {self.email}"
+        return f"{self.name} ({self.email})"
+
 
 class UserManager:
     def __init__(self):

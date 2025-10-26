@@ -26,6 +26,7 @@ def main():
     add_project_parser.add_argument("title", help="Project title")
     add_project_parser.add_argument("description", help="Project description")
     add_project_parser.add_argument("due_date", help="Project due date")
+    add_project_parser.add_argument("owner", help="Owner email")
 
     list_project_parser = subparsers.add_parser("list-projects", help="List all projects")
 
@@ -33,6 +34,7 @@ def main():
     add_task_parser = subparsers.add_parser("add-task", help="Add a new task")
     add_task_parser.add_argument("title", help="Task title")
     add_task_parser.add_argument("status", help="Task status")
+    add_task_parser.add_argument("--project_title", help="Project title", default=None)
     add_task_parser.add_argument("--assigned_to", help="Assigned user email", default=None)
 
     list_task_parser = subparsers.add_parser("list-tasks", help="List all tasks")
@@ -47,12 +49,12 @@ def main():
         um.list_users()
 
     elif args.command == "add-project":
-        pm.add_project(args.title, args.description, args.due_date)
+        pm.add_project(args.title, args.description, args.due_date, args.owner)
     elif args.command == "list-projects":
         pm.list_projects()
 
     elif args.command == "add-task":
-        tm.add_task(args.title, args.status, args.assigned_to)
+        tm.add_task(args.title, args.status, args.project_title, args.assigned_to)
     elif args.command == "list-tasks":
         tm.list_tasks()
     else:

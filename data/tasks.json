@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Design homepage",
+    "status": "in-progress",
+    "project_title": "Website Redesign",
+    "assigned_to": "sam@example.com"
+  },
+  {
+    "title": "Review code",
+    "status": "todo",
+    "project_title": null,
+    "assigned_to": null
+  },
+  {
+    "title": "Setup project",
+    "status": "todo",
+    "project_title": "Mobile App",
+    "assigned_to": "bob@example.com"
+  },
+  {
+    "title": "Test Task",
+    "status": "todo",
+    "project_title": null,
+    "assigned_to": null
+  },
+  {
+    "title": "Another Task",
+    "status": "in-progress",
+    "project_title": "Website Redesign",
+    "assigned_to": "sam@example.com"
+  }
+]
