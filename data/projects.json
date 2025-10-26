@@ -16,5 +16,35 @@
         "description": "this is where you consume food",
         "due_date": "August 2nd",
         "owner_email": "owner@example.com"
+    },
+    {
+        "title": "TestProject",
+        "description": "Test Description",
+        "due_date": "2025-12-31",
+        "owner_email": "test@example.com"
+    },
+    {
+        "title": "TestProject",
+        "description": "Test Description",
+        "due_date": "2025-12-31",
+        "owner_email": "test@example.com"
+    },
+    {
+        "title": "TestProject",
+        "description": "Test Description",
+        "due_date": "2025-12-31",
+        "owner_email": "test@example.com"
+    },
+    {
+        "title": "TestProject",
+        "description": "Test Description",
+        "due_date": "2025-12-31",
+        "owner_email": "test@example.com"
+    },
+    {
+        "title": "TestProject",
+        "description": "Test Description",
+        "due_date": "2025-12-31",
+        "owner_email": "test@example.com"
     }
 ]
